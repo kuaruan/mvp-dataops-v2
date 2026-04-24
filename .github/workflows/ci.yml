@@ -27,4 +27,8 @@ jobs:
       - name: Ejecutar tests
         env:
           PYTHONPATH: .
+          # Aquí conectamos los secretos de GitHub con las variables que espera tu código
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          PROJECT_ID: ${{ secrets.PROJECT_ID }}
         run: python -m pytest -v
