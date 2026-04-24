@@ -1,0 +1,6 @@
+# Entorno virtual
+.venv/
+__pycache__/
+
+# Secretos y configuración
+.env
