@@ -1,6 +1,4 @@
-# Entorno virtual
-.venv/
-__pycache__/
-
-# Secretos y configuración
 .env
+*.xlsx
+__pycache__/
+.venv/
